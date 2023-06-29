@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Coffee shop and cat adoptions">
+	<meta name="author" content="Jenna Tentler">
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://use.typekit.net/qnw4pex.css">
+	<link rel="stylesheet" type="text/css" href="catsandcoffee.css">
+	<script src="modernizr.custom.05819.js"></script>
+	<script src="catsandcoffee.js"></script>
+	<script src="contactform.js"></script>
+	<title>Cats & Coffee</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Cats & Coffee</h1>
+			<a href="index.html"><img src="images/logo.jpg" alt="The company logo of a cat in an apron surrounded by coffee." width="400" id="logo"></a>
+			<h2>Cat Cafe<br>Youngstown, OH</h2>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="coffee.html">Our Coffee</a></li>
+				<li><a href="cats.html">Our Cats</a></li>
+				<li><a href="#">Our Community</a></li>
+				<li><a href="websafety.html">Web Safety</a></li>
+			</ul>
+		</nav>
+
+		<article id="intro">
+			<p>Love coffee? Love cats? Come Enjoy both! At <b>Coffee & Cats</b> we are committed to giving our customers the best coffee, tea, and other beverages while allowing them to hang out with some of the awesome cats available for adoption in our area.</p>
+		</article>
+
+		<section id="feature">
+			<h3>Our Featured Cat of the Week</h3>
+			<img src="images/antonio.jpg" alt="An orange, shorthaired tabby cat named Antonio standing on a blanket.">
+			<h4>Meet Antonio!</h4>
+			<p>My name is Antonio and I am a male, orange tabby Domestic Shorthair.</p>
+			<p>I am estimated to be 4 months old.</p>
+			<p>You can find information on how to adopt me <a href="http://angelsforanimals.org/">here</a>.</p>
+		</section>
+
+		<section id="location">
+			<img src="images/map.jpg" alt="A map indicating the location of the Cats & Coffee shop.">
+			<h3>Come See Us</h3>
+			<p>1234 Main St.<br>Youngstown, OH 44509</p>
+			<p>330-123-4567</p>
+			<p>Mon. - Sat. 10am to 6pm<br>Sun. 11am to 4pm</p>
+		</section>
+
+		<section id="contact">
+			<h3>Connect With Us</h3>
+
+			<form name="contactForm" action="" onsubmit="return validateForm()" method="post">
+				<input type="text" id="name" name="name" placeholder="Jane Doe" required> <label for="name">Name: </label> <br>
+				<input type="text" id="email" name="email" placeholder="janedoe@email.com" required> <label for="email">Email: </label> <br>
+				<input type="text" id="phone" name="phone" placeholder="(123) 456 - 7890" required> <label for="phone">Phone: </label> <br><br>
+				<textarea id="message" name="message" placeholder="Questions? Concerns? Comments? Let us know what's on your mind!" required></textarea><br>
+				<label id="prefercontact">How do you prefer we contact you?</label>
+				<input type="radio" id="preferphone" name="preference"><label for="preferphone">Phone </label>
+				<input type="radio" id="preferemail" name="preference"><label for="preferemail">Email </label>
+				<input type="submit" id="submit" value="Submit">
+			</form>
+			<span id="formError"></span>
+		</section>
+
+		<section id="social">
+			<a href="http://www.facebook.com/"><img src="images/facebook.jpg" alt="The Facebook logo." width="100"></a>
+			<a href="http://www.instagram.com/"><img src="images/instagram.jpg" alt="The Instagram logo." width="100"></a>
+			<a href="http://www.twitter.com/"><img src="images/twitter.jpg" alt="The Twitter logo." width="100"></a>
+		</section>
+
+		<footer>
+			<p>Copyright &copy; Cats & Coffee 2020 | This site is for educational purposes only.</p>
+		</footer>
+	</div>
+</body>
+</html>

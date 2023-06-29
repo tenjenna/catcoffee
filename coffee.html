@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Coffee shop and cat adoptions">
+	<meta name="author" content="Jenna Tentler">
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://use.typekit.net/qnw4pex.css">
+	<link rel="stylesheet" type="text/css" href="catsandcoffee.css">
+	<script src="modernizr.custom.05819.js"></script>
+	<script src="catsandcoffee.js"></script>
+	<script src="chapter7.js"></script>
+	<title>Cats & Coffee</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Cats & Coffee</h1>
+			<a href="index.html"><img src="images/logo.jpg" alt="The company logo of a cat in an apron surrounded by coffee." width="400" id="logo"></a>
+			<h2>Cat Cafe<br>Youngstown, OH</h2>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="coffee.html">Our Coffee</a></li>
+				<li><a href="cats.html">Our Cats</a></li>
+				<li><a href="#">Our Community</a></li>
+			</ul>
+		</nav>
+
+		<h3>Check Out Our Menu</h3>
+		<h5>Ask us about our alternative milk options and additional flavors.</h5>
+
+		<section id="coffee1">
+			<img src="images/coffee.jpg" alt="A mug of steaming hot coffee with a saucer sitting beneath the mug.">
+			<dl>
+				<dt>Americano</dt>
+				<dd>Shots of espresso with water.</dd>
+				<dd>$2</dd>
+				<dt>Espresso</dt>
+				<dd>Shots of espresso.</dd>
+				<dd>$1</dd>
+				<dt>Black Coffee</dt>
+				<dd>Hot, black coffee.</dd>
+				<dd>$2</dd>
+			</dl>
+		</section>
+
+		<section id="coffee2">
+			<img src="images/icedcoffee.png" alt="A cup of iced coffee with a straw and lid.">
+			<dl>
+				<dt>Latte</dt>
+					<dd>Shots of espresso with milk.</dd>
+					<dd>$3</dd>
+				<dt>Mocha</dt>
+					<dd>Shots of espresso with mocha flavoring and milk.</dd>
+					<dd>$4</dd>
+				<dt>Cappuccino</dt>
+					<dd>Shots of espresso with half milk froth and half milk.</dd>
+					<dd>$3</dd>
+				<dt>Macchiato</dt>
+					<dd>Shots of espresso with a dollop of milk froth.</dd>
+					<dd>$1.50</dd>
+			</dl>
+		</section>
+
+		<section id="coffee3">
+			<img src="images/latte.jpg" alt="A to-go coffee cup with a sleeve and lid.">
+			<dl>
+				<dt>Con Panna</dt>
+					<dd>Shots of espresso with a dollop of whipped cream.</dd>
+					<dd>$1.50</dd>
+				<dt>Iced Coffee</dt>
+					<dd>Iced, black coffee.</dd>
+					<dd>$3</dd>
+				<dt>Cold brew</dt>
+					<dd>Cold brewed coffee, black.</dd>
+					<dd>$3</dd>
+				<dt>Hot Chocolate</dt>
+					<dd>Creamy steamed milk with mocha and vanilla flavoring and whipped cream.</dd>
+					<dd>$2.50</dd>
+			</dl>
+		</section>
+		<section id="calculator">
+		<center><h3>Calculate Your Coffee Order Cost</h3></center>
+		<form id="coffeecost">
+            <fieldset>
+               <legend><span>Coffee</span></legend>
+               <input type="checkbox" id="americano">
+			   <label for="americano">
+                  Americano, $2
+               </label>
+
+               <input type="checkbox" id="espresso">
+               <label for="espresso">
+                  Espresso, $1
+               </label>
+		
+               <input type="checkbox" id="blackcoffee">
+               <label for="blackcoffee">
+                  Black Coffee, $2
+               </label>
+				
+               <input type="checkbox" id="latte">
+               <label for="latte">
+                  Latte, $3
+               </label>
+				
+               <input type="checkbox" id="mocha">
+				<label for="mocha">
+                  Mocha, $4
+               </label>
+				
+               <input type="checkbox" id="cappuccino">
+               <label for="cappuccino">
+                  Cappuccino, $3
+               </label>
+				
+               <input type="checkbox" id="macchiato">
+               <label for="macchiato">
+                  Macchiato, $1.50
+               </label>
+				
+               <input type="checkbox" id="conpanna">
+               <label for="conpanna">
+                  Con Panna, $1.50
+               </label>
+				
+               <input type="checkbox" id="icedcoffee">
+               <label for="icedcoffee">
+                  Iced Coffee, $3
+               </label>
+				
+               <input type="checkbox" id="coldbrew">
+               <label for="coldbrew">
+                  Cold Brew, $3
+               </label>
+				
+               <input type="checkbox" id="hotchocolate">
+               <label for="hotchocolate">
+                  Hot Chocolate, $2.50 
+               </label>
+            </fieldset>
+			<fieldset>
+				<legend><span>Donate</span></legend>
+				<input type="number" min="0" id="donation" value="0">
+				<label for="donation" id="donate">
+					Donate to help us care for your favorite kitties!
+				</label>
+			</fieldset>
+         </form>
+	 		<button id="calculate">Calculate Total</button>
+               <h4>Total Cost: <span id="total"></span></h4>
+			   <h4><span id="donationDisplay"></span></h4>
+			   <h4><span id="errorMsg"></span></h4>
+		</section>
+		<section id="suggestion">
+			<h3>Suggest a Flavor</h3>
+			<p>Have a great idea for a new coffee flavor? Let us know! You might see it added to our menu.</p>
+			<form id="suggestion">
+			 <fieldset class="text">
+				<legend>Add a Flavor Suggestion</legend>
+				<input type="text" id="flavor" placeholder="Salted Caramel">
+				 <label for="flavor">Suggestion:</label>
+				<input type="button" value="Add Flavor" id="addFlavor">
+			 </fieldset>
+    		</form>
+		</section>
+        <section id="suggest">
+        	<h4>Flavor Suggestions</h4>
+        		<div id="flavorSection">
+            		<table>
+					<tbody>
+						<tr id="flavors"></tr>
+					</table>
+         		</div>
+        </section>
+		<br><br>
+		<footer>
+			<p>Copyright © Cats &amp; Coffee 2020 | This site is for educational purposes only.</p>
+		</footer>
+	</div>
+</body>
+</html>
